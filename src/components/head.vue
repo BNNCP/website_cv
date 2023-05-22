@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from 'vue';
-import gitImg from '../../dist/assets/github-mark-367d5cb2-367d5cb2.png'
-import linkImg from '../../dist/assets/LI-In-Bug-3c0149f2-3c0149f2.png'
-import me from '../../dist/assets/0318_163000223-0-7b186212.jpg'
+import gitImg from '../../public/github-mark-367d5cb2-367d5cb2-367d5cb2.png'
+import linkImg from '../../public/LI-In-Bug-3c0149f2-3c0149f2-3c0149f2.png'
+import me from '../../public/0318_163000223-0-7b186212-7b186212.jpg'
 
 const github = ref("https://github.com/BNNCP");
 const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
