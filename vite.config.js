@@ -9,8 +9,6 @@ export default defineConfig({
       usePolling: true,
     }
   },
+  publicPath: '/website_cv'
 
 })
-module.exports = {
-  'production': '/website_cv/',
-};

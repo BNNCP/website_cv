@@ -80,7 +80,7 @@ randomColors();
         <div class="target " v-motion-slide-visible-once-left>
             <div class="row bg-primary rounded-3"
                 :class="{ 'bg-primary': color == 'bg-primary', 'bg-success': color == 'bg-success', 'bg-danger': color == 'bg-danger', 'bg-warning': color == 'bg-warning', 'bg-info': color == 'bg-info' }"
-                style="--bs-bg-opacity: .1;"> 
+                style="--bs-bg-opacity: .1;">
                 <div class="col m-2">
                     <h2></h2>
                 </div>
