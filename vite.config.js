@@ -9,6 +9,6 @@ export default defineConfig({
       usePolling: true,
     }
   },
-  base: "./{website_cv}/"
+  base: "./website_cv"
 
 })
