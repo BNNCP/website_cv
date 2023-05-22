@@ -9,6 +9,6 @@ export default defineConfig({
       usePolling: true,
     }
   },
-  publicPath: '/website_cv'
+  base: '/website_cv'
 
 })
