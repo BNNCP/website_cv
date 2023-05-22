@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 import gitImg from '../../dist/assets/github-mark-367d5cb2.png'
 import linkImg from '../../dist/assets/LI-In-Bug-3c0149f2.png'
+import me from '../../dist/assets/0318_163000223-0.jpg'
 
 const github = ref("https://github.com/BNNCP");
 const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
@@ -15,44 +16,42 @@ const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
         <div class="container-fluid">
 
             <div class="row">
-                <div id="imgbox" class="col-4 m-2">
-                    <img class="img-fluid"
-                        src="https://steamuserimages-a.akamaihd.net/ugc/2026089936703445813/3F19744D7A5D286CF6559CBA5B78865FDBABF780/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true"
-                        alt="我">
-
+                <div id="imgbox" class="col-4">
+                    <img class="img-fluid" :src="me" alt="我">
+                    <div class="row rowLink">
+                        <div class="col-1 linkTo">
+                            <img :src="gitImg" alt="github">
+                            <a :href="github" target="_blank">Github</a>
+                        </div>
+                        <div class="col-1 linkTo">
+                            <img :src="linkImg" alt="github">
+                            <a :href="lindIn" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
                 </div>
-                <div id="dialogue" class="col-6 m-2">
+                <div id="dialogue" class="col-6 border-start">
                     <div>
                         <p id="name" class="text-start">張秉中</p>
                         <p id="title" class="text-end">全端工程師</p>
                     </div>
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat blanditiis voluptates laboriosam
-                            voluptatibus delectus nam nostrum eos, fuga id ipsum eligendi saepe voluptatem, earum libero,
-                            temporibus quae explicabo omnis in ea. Adipisci, consequatur blanditiis? Soluta vero rerum
-                            provident maxime ducimus neque beatae dicta sint asperiores inventore veniam eveniet aspernatur
-                            eligendi officia, libero ipsa et nisi, cupiditate, modi sed quibusdam esse quod excepturi!
-                            Mollitia aperiam cum a eos aliquam fuga cumque voluptatum ducimus, ipsam animi. Aspernatur
-                            maiores dolor velit animi consequuntur. Alias aut quod quas temporibus autem corrupti illum,
-                            maxime voluptatum, quae non accusamus commodi magnam veritatis voluptas? Harum natus molestiae
-                            eos ea. Obcaecati corporis animi laborum. Blanditiis iste natus tenetur nesciunt, aperiam, atque
-                            quo ipsam voluptas maxime nisi aliquam eveniet reiciendis, sit quidem culpa eligendi at. Quaerat
-                            mollitia neque accusamus recusandae? Laboriosam incidunt debitis labore, non hic sed ab
-                            voluptates cumque enim temporibus officiis culpa, vitae, omnis accusantium architecto quibusdam!
+                    <div class="text-body">
+                        <p class="lh-base">
+                            您好，我是張秉中，國高中就讀於菲律賓國際學校，而後回台灣就讀成功大學政治學系。畢業後出於個人興趣和規劃，開始學習全端工程師相關知識，期望能夠在這個領域發揮自己的才能和熱情。
                         </p>
+                        <br>
+                        <p class="lh-base">
+                            我是一位負責任、自我要求高的人，更是一個勇於學習新技術的人。在全端工程師訓練班上課期間，除了學習課堂上的內容之外，我利用課餘時間自學，例如，觀看哈佛大學的CS50課程、在HackerRank上進行演算法相關的練習，來彌補程式基礎，同時提高解決問題的能力。為了更深入了解網路應用開發，我主動學習了WebSocket、WebRTC等技術，實現專案的即時通訊功能，為專題開發提供更多可能性。我相信不斷學習新技術能夠讓我在全端工程師的角色中保持競爭力，並為團隊帶來更多價值。
+                        </p>
+                        <br>
+                        <p class="lh-base">
+                            雖然我非本科系畢業，但過去我在成功大學政治系的學習過程中，培養了扎實的研究、分析和溝通能力，我也擔任過社團活動總召與幹部，這些經驗使我能夠從多個角度看待問題並提供全面的解決方案，我相信這些能力也能應用在全端工程師的職位上，並將有助於我與團隊成員合作。
+                        </p>
+                        <br>
+                        <p class="lh-base">我期待有機會加入貴公司，並將我所學與我的責任感、自我要求和學習精神相結合，為團隊帶來價值。</p>
                     </div>
                 </div>
             </div>
-            <div class="row rowLink">
-                <div class="col-1 linkTo">
-                    <img :src="gitImg" alt="github">
-                    <a :href="github" target="_blank">Github</a>
-                </div>
-                <div class="col-1 linkTo">
-                    <img :src="linkImg" alt="github">
-                    <a :href="lindIn" target="_blank">LinkedIn</a>
-                </div>
-            </div>
+
         </div>
 
     </section>
@@ -82,17 +81,21 @@ const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
     margin: 1rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-start;
 }
 
 
 #imgbox>img {
     border-radius: 3rem;
-    width: 100%;
+    width: 70%;
 
     display: block;
     overflow: hidden;
+}
+
+#dialogue {
+    padding-left: 5rem;
 }
 
 #dialogue>div {
@@ -115,12 +118,23 @@ const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
 }
 
 .rowLink {
-    justify-content: left;
-    margin-left: 7rem;
+    justify-content: flex-start;
+
+}
+
+.text-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.text-body>p {
+    text-align: justify;
+    font-size: 16px;
 }
 
 .linkTo {
-    margin-left: 1rem;
+    margin: 0.5rem 3rem 0 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
