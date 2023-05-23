@@ -4,7 +4,7 @@ import vue from '@vitejs/plugin-vue'
 
 
 export default defineConfig({
-  base:"/website_cv/",
+  base:"/website_cv",
   plugins: [
     vue(),
   ],
