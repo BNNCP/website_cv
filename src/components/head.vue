@@ -82,7 +82,7 @@ const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 
