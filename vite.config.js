@@ -9,6 +9,6 @@ export default defineConfig({
       usePolling: true,
     }
   },
-  base: "/{website_cv}/"
+  publicPath: process.env.NODE_ENV === "production" ? "/{website_cv}/" : "./",
 
 })
