@@ -17,7 +17,7 @@ const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
 
             <div class="row">
                 <div id="imgbox" class="col-4">
-                    <img class="img-fluid" :src="me" alt="???">
+                    <img class="" :src="me" alt="???">
                     <div class="row rowLink">
                         <div class="col-1 linkTo">
                             <img :src="gitImg" alt="github">
@@ -69,7 +69,6 @@ const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
 }
 
 .main {
-    border-radius: 1rem;
     background-color: #F0E5DE;
     display: flex;
     flex-direction: column;
@@ -84,12 +83,13 @@ const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
     justify-content: center;
     align-items: center;
 }
-
+#imgbox{
+    margin-right: 3rem;
+}
 
 #imgbox>img {
+    width: 90%;
     border-radius: 3rem;
-    width: 70%;
-
     display: block;
     overflow: hidden;
 }

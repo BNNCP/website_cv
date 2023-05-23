@@ -135,12 +135,14 @@ randomColors();
 </template>
 
 <style scoped>
+
 .container-fluid {
     background: #F0E5DE;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 0;
 }
 
 .title {

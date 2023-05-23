@@ -4,6 +4,7 @@ import bodyvue from "./components/body.vue";
 </script>
 
 <template>
+  
   <headvue></headvue>
   <bodyvue />
 </template>
