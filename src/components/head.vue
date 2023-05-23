@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue';
-import gitImg from '../image/github-mark-367d5cb2-367d5cb2-367d5cb2.png'
-import linkImg from '../image/LI-In-Bug-3c0149f2-3c0149f2-3c0149f2.png'
+import gitImg from '/image/github-mark-367d5cb2-367d5cb2-367d5cb2.png'
+import linkImg from '/image/LI-In-Bug-3c0149f2-3c0149f2-3c0149f2.png'
 import me from '../image/0318_163000223-0-7b186212-7b186212.jpg'
 
 const github = ref("https://github.com/BNNCP");
