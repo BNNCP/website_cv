@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from 'vue';
-import gitImg from '../../public/github-mark-367d5cb2-367d5cb2-367d5cb2.png'
-import linkImg from '../../public/LI-In-Bug-3c0149f2-3c0149f2-3c0149f2.png'
-import me from '../../public/0318_163000223-0-7b186212-7b186212.jpg'
+import gitImg from '../image/github-mark-367d5cb2-367d5cb2-367d5cb2.png'
+import linkImg from '../image/public/LI-In-Bug-3c0149f2-3c0149f2-3c0149f2.png'
+import me from '../image/public/0318_163000223-0-7b186212-7b186212.jpg'
 
 const github = ref("https://github.com/BNNCP");
 const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
@@ -11,13 +11,13 @@ const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
 <template>
     <section class="main">
         <div class="row">
-            <h1>操你媽</h1>
+            <h1>�ާA��</h1>
         </div>
         <div class="container-fluid">
 
             <div class="row">
                 <div id="imgbox" class="col-4">
-                    <img class="img-fluid" :src="me" alt="我">
+                    <img class="img-fluid" :src="me" alt="???">
                     <div class="row rowLink">
                         <div class="col-1 linkTo">
                             <img :src="gitImg" alt="github">
@@ -31,23 +31,23 @@ const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
                 </div>
                 <div id="dialogue" class="col-6 border-start">
                     <div>
-                        <p id="name" class="text-start">張秉中</p>
-                        <p id="title" class="text-end">全端工程師</p>
+                        <p id="name" class="text-start">�i�ä�</p>
+                        <p id="title" class="text-end">���ݤu�{�v</p>
                     </div>
                     <div class="text-body">
                         <p class="lh-base">
-                            您好，我是張秉中，國高中就讀於菲律賓國際學校，而後回台灣就讀成功大學政治學系。畢業後出於個人興趣和規劃，開始學習全端工程師相關知識，期望能夠在這個領域發揮自己的才能和熱情。
+                            �z�n�A�ڬO�i�ä��A�갪���NŪ���߻���ھǮաA�ӫ�^�x�W�NŪ���\�j�ǬF�v�Ǩt�C���~��X��ӤH����M�W���A�}�l�ǲߥ��ݤu�{�v�������ѡA�������b�o�ӻ��o���ۤv���~��M�����C
                         </p>
                         <br>
                         <p class="lh-base">
-                            我是一位負責任、自我要求高的人，更是一個勇於學習新技術的人。在全端工程師訓練班上課期間，除了學習課堂上的內容之外，我利用課餘時間自學，例如，觀看哈佛大學的CS50課程、在HackerRank上進行演算法相關的練習，來彌補程式基礎，同時提高解決問題的能力。為了更深入了解網路應用開發，我主動學習了WebSocket、WebRTC等技術，實現專案的即時通訊功能，為專題開發提供更多可能性。我相信不斷學習新技術能夠讓我在全端工程師的角色中保持競爭力，並為團隊帶來更多價值。
+                            �ڬO�@��t�d���B�ۧڭn�D�����H�A��O�@�ӫi��ǲ߷s�޳N���H�C�b���ݤu�{�v�V�m�Z�W�Ҵ����A���F�ǲ߽Ұ�W�����e���~�A�ڧQ�νҾl�ɶ��۾ǡA�Ҧp�A�[�ݫ���j�Ǫ�CS50�ҵ{�B�bHackerRank�W�i��t��k�������m�ߡA�����ɵ{����¦�A�P�ɴ����ѨM���D����O�C���F��`�J�F�Ѻ������ζ}�o�A�ڥD�ʾǲߤFWebSocket�BWebRTC���޳N�A��{�M�ת��Y�ɳq�T�\��A���M�D�}�o���ѧ�h�i��ʡC�ڬ۫H���_�ǲ߷s�޳N������ڦb���ݤu�{�v�����⤤�O���v���O�A�ì��ζ��a�ӧ�h���ȡC
                         </p>
                         <br>
                         <p class="lh-base">
-                            雖然我非本科系畢業，但過去我在成功大學政治系的學習過程中，培養了扎實的研究、分析和溝通能力，我也擔任過社團活動總召與幹部，這些經驗使我能夠從多個角度看待問題並提供全面的解決方案，我相信這些能力也能應用在全端工程師的職位上，並將有助於我與團隊成員合作。
+                            ���M�ګD����t���~�A���L�h�ڦb���\�j�ǬF�v�t���ǲ߹L�{���A���i�F��ꪺ��s�B���R�M���q��O�A�ڤ]����L���ά����`�l�P�F���A�o�Ǹg��ϧگ���q�h�Ө��׬ݫݰ��D�ô��ѥ������ѨM��סA�ڬ۫H�o�ǯ�O�]�����Φb���ݤu�{�v��¾��W�A�ñN���U��ڻP�ζ������X�@�C
                         </p>
                         <br>
-                        <p class="lh-base">我期待有機會加入貴公司，並將我所學與我的責任感、自我要求和學習精神相結合，為團隊帶來價值。</p>
+                        <p class="lh-base">�ڴ��ݦ����|�[�J�Q���q�A�ñN�کҾǻP�ڪ��d���P�B�ۧڭn�D�M�ǲߺ믫�۵��X�A���ζ��a�ӻ��ȡC</p>
                     </div>
                 </div>
             </div>
