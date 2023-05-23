@@ -2,8 +2,8 @@
 import { ref } from 'vue';
 var colors = ref(['bg-primary', 'bg-success', 'bg-danger', 'bg-warning', 'bg-info']);
 var color = ref();
-const highSchoolImg = "../image/public/channels4_profile.jpg"
-const collegeImg = "../image/public/National_Cheng_Kung_University_logo.svg.png"
+const highSchoolImg = "../image/channels4_profile.jpg"
+const collegeImg = "../image/National_Cheng_Kung_University_logo.svg.png"
 
 function randomColors() {
     setInterval(() => {
