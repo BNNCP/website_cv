@@ -18,7 +18,7 @@ randomColors();
     <div class="container-fluid">
         <section class="title" v-motion-slide-visible-once-top>
             <font-awesome-icon class="fa-2x" :icon="['fas', 'school']" flip />
-            <h1>´N¾Ç¸g¾ú</h1>
+            <h1>å°±å­¸ç¶“æ­·</h1>
         </section>
         <div class="target " v-motion-slide-visible-once-left>
             <div class="row bg-primary rounded-3"
@@ -51,7 +51,7 @@ randomColors();
                 :class="{ 'bg-primary': color == 'bg-primary', 'bg-success': color == 'bg-success', 'bg-danger': color == 'bg-danger', 'bg-warning': color == 'bg-warning', 'bg-info': color == 'bg-info' }"
                 style="--bs-bg-opacity: .1;">
                 <div class="col m-2">
-                    <h2>°ê¥ß¦¨¥\¤j¾Ç</h2>
+                    <h2>åœ‹ç«‹æˆåŠŸå¤§å­¸</h2>
                 </div>
                 <div class="col m-2 text-break lh-lg text-wrap">
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus repudiandae doloribus laborum,
@@ -75,7 +75,7 @@ randomColors();
         </div>
         <section class="title" v-motion-slide-visible-once-top>
             <font-awesome-icon class="fa-2x" icon="fa-solid fa-star" flip />
-            <h1>§@«~±M®×</h1>
+            <h1>ä½œå“å°ˆæ¡ˆ</h1>
         </section>
         <div class="target " v-motion-slide-visible-once-left>
             <div class="row bg-primary rounded-3"
