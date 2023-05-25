@@ -11,7 +11,7 @@ const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
 <template>
     <section class="main">
         <div class="row">
-            <h1>操你媽</h1>
+            <h1>秉中的家</h1>
         </div>
         <div class="container-fluid">
 
