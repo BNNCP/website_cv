@@ -11,7 +11,7 @@ const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
 <template>
     <section class="main">
         <div class="row">
-            <h1>秉中的家</h1>
+            <h1 style="font-weight: bolder; font-size: 50px; margin: 2rem; margin-left: 5rem; ">大中中的家</h1>
         </div>
         <div class="container-fluid">
 
@@ -46,8 +46,6 @@ const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
                         <p class="lh-base">
                             雖然我非本科系畢業，但過去我在成功大學政治系的學習過程中，培養了扎實的研究、分析和溝通能力，我也擔任過社團活動總召與幹部，這些經驗使我能夠從多個角度看待問題並提供全面的解決方案，我相信這些能力也能應用在全端工程師的職位上，並將有助於我與團隊成員合作。
                         </p>
-                        <br>
-                        <p class="lh-base">我期待有機會加入貴公司，並將我所學與我的責任感、自我要求和學習精神相結合，為團隊帶來價值。</p>
                     </div>
                 </div>
             </div>
@@ -83,7 +81,8 @@ const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
     justify-content: center;
     align-items: center;
 }
-#imgbox{
+
+#imgbox {
     margin-right: 3rem;
 }
 
@@ -105,15 +104,15 @@ const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
 
 #name {
     display: inline-block;
-    font-size: 30px;
-    font-weight: 1000;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 #title {
     display: inline-block;
     text-align: end;
-    font-size: 22px;
-    font-weight: 1000;
+    font-size: 30px;
+    font-weight: bold;
     font-style: italic;
 }
 
@@ -130,7 +129,7 @@ const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
 
 .text-body>p {
     text-align: justify;
-    font-size: 16px;
+    font-size: 24px;
 }
 
 .linkTo {
