@@ -63,11 +63,12 @@ randomColors();
             <h1>作品專案</h1>
         </section>
         <div class="target " id="chicken" v-motion-slide-visible-once-left>
-            <div class="row">
+            <div class="row imgbox">
                 <a href="https://fanciful-vacherin-50759d.netlify.app/" target="_blank"><img class="logo-work img-fluid"
                         :src="chickenLive" alt="ChickenLive"></a>
+                <div class="hint">↑打開專案連結</div>
             </div>
-            <div class="row bg-primary rounded-3"
+            <div class="row bg-primary rounded-3 textbox"
                 :class="{ 'bg-primary': color == 'bg-primary', 'bg-success': color == 'bg-success', 'bg-danger': color == 'bg-danger', 'bg-warning': color == 'bg-warning', 'bg-info': color == 'bg-info' }"
                 style="--bs-bg-opacity: .1;">
                 <div class="col m-2">
@@ -83,11 +84,12 @@ randomColors();
 
         </div>
         <div class="target " id="chicken" v-motion-slide-visible-once-left>
-            <div class="row">
+            <div class="row imgbox">
                 <a href="https://github.com/BNNCP/Ramen-Order-System" target="_blank"><img class="logo-work img-fluid"
                         :src="ramen" alt="Ramen Order System"></a>
+                <div class="hint">↑打開專案連結</div>
             </div>
-            <div class="row bg-primary rounded-3"
+            <div class="row bg-primary rounded-3 textbox"
                 :class="{ 'bg-primary': color == 'bg-primary', 'bg-success': color == 'bg-success', 'bg-danger': color == 'bg-danger', 'bg-warning': color == 'bg-warning', 'bg-info': color == 'bg-info' }"
                 style="--bs-bg-opacity: .1;">
                 <div class="col m-2">
@@ -101,11 +103,12 @@ randomColors();
             </div>
         </div>
         <div class="target " id="chicken" v-motion-slide-visible-once-left>
-            <div class="row">
+            <div class="row imgbox">
                 <a href="https://github.com/BNNCP/BingoBingo" target="_blank"><img class="logo-work img-fluid" :src="Bingo"
                         alt="BingoBingo"></a>
+                <div class="hint">↑打開專案連結</div>
             </div>
-            <div class="row bg-primary rounded-3"
+            <div class="row bg-primary rounded-3 textbox"
                 :class="{ 'bg-primary': color == 'bg-primary', 'bg-success': color == 'bg-success', 'bg-danger': color == 'bg-danger', 'bg-warning': color == 'bg-warning', 'bg-info': color == 'bg-info' }"
                 style="--bs-bg-opacity: .1;">
                 <div class="col m-2">
@@ -130,6 +133,9 @@ p {
     font-size: 22px;
 }
 
+h1 {
+    font-weight: bolder;
+}
 
 .container-fluid {
     background: #F0E5DE;
@@ -160,7 +166,7 @@ p {
 
 .target {
     width: 1000px;
-    margin: 13rem 0 0 0;
+    margin: 10rem 0 0 0;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
