@@ -1,8 +1,8 @@
 <script setup>
 import { ref } from 'vue';
-import gitImg from '../../public/github-mark-367d5cb2-367d5cb2-367d5cb2.png'
-import linkImg from '../../public/LI-In-Bug-3c0149f2-3c0149f2-3c0149f2.png'
-import me from '../../public/0318_163000223-0-7b186212-7b186212.jpg'
+import gitImg from '../image/github-mark-367d5cb2-367d5cb2-367d5cb2.png'
+import linkImg from '../image/LI-In-Bug-3c0149f2-3c0149f2-3c0149f2.png'
+import me from '../image/0318_163000223-0-7b186212-7b186212.jpg'
 
 const github = ref("https://github.com/BNNCP");
 const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
@@ -17,7 +17,7 @@ const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
 
             <div class="row">
                 <div id="imgbox" class="col-4">
-                    <img class="img-fluid" :src="me" alt="我">
+                    <img class="" :src="me" alt="???">
                     <div class="row rowLink">
                         <div class="col-1 linkTo">
                             <img :src="gitImg" alt="github">
@@ -69,7 +69,6 @@ const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
 }
 
 .main {
-    border-radius: 1rem;
     background-color: #F0E5DE;
     display: flex;
     flex-direction: column;
@@ -82,14 +81,15 @@ const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+}
+#imgbox{
+    margin-right: 3rem;
 }
 
-
 #imgbox>img {
+    width: 90%;
     border-radius: 3rem;
-    width: 70%;
-
     display: block;
     overflow: hidden;
 }
