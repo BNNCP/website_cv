@@ -64,7 +64,7 @@ randomColors();
         </section>
         <div class="target " id="chicken" v-motion-slide-visible-once-left>
             <div class="row imgbox">
-                <a href="https://fanciful-vacherin-50759d.netlify.app/" target="_blank"><img class="logo-work img-fluid"
+                <a href="https://chickenlive.netlify.app/" target="_blank"><img class="logo-work img-fluid"
                         :src="chickenLive" alt="ChickenLive"></a>
                 <div class="hint">↑打開專案連結</div>
             </div>
