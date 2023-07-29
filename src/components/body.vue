@@ -7,6 +7,7 @@ import collegeImg from "../image/National_Cheng_Kung_University_logo.svg.png"
 import chickenLive from "../image/messageImage_1685025673792.jpg"
 import ramen from "../image/messageImage_1685034530405.jpg"
 import Bingo from '../image/346168769_926792961920849_6290047423726556787_n.png'
+import Amigo from "../image/Untitled.png"
 
 function randomColors() {
     setInterval(() => {
@@ -64,7 +65,26 @@ randomColors();
         </section>
         <div class="target " id="chicken" v-motion-slide-visible-once-left>
             <div class="row imgbox">
-                <a href="https://chickenlive.netlify.app/" target="_blank"><img class="logo-work img-fluid"
+                <a href="https://github.com/momipochi/taiwan_amigo" target="_blank"><img class="logo-work img-fluid"
+                        :src="Amigo" alt="ChickenLive"></a>
+                <div class="hint">↑打開專案連結</div>
+            </div>
+            <div class="row bg-primary rounded-3 textbox"
+                :class="{ 'bg-primary': color == 'bg-primary', 'bg-success': color == 'bg-success', 'bg-danger': color == 'bg-danger', 'bg-warning': color == 'bg-warning', 'bg-info': color == 'bg-info' }"
+                style="--bs-bg-opacity: .1;">
+                <div class="col m-2">
+                    <h1>聊天Amigo</h1>
+                </div>
+                <div class="col m-2 text-break lh-lg text-wrap">
+                    <p>聊天Amigo是一個能夠實現隨機配對交友的網站，前端使用Vue作為框架，後端則使用nest.js。這個專案使用了WebRTC，使用者之間的訊息傳遞不再透過第三方伺服器來達成，大大縮減了伺服器的負擔。未來的更新規劃也預計讓使用者能在視訊畫面加上filter濾鏡，來增強整體網站的UX。
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="target " id="chicken" v-motion-slide-visible-once-left>
+            <div class="row imgbox">
+                <a href="https://github.com/Bobo0808/final_REPO" target="_blank"><img class="logo-work img-fluid"
                         :src="chickenLive" alt="ChickenLive"></a>
                 <div class="hint">↑打開專案連結</div>
             </div>
