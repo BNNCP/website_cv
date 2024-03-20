@@ -114,8 +114,8 @@ randomColors();
         </div>
         <div class="target " id="chicken" v-motion-slide-visible-once-left>
             <div class="row imgbox">
-                <a href="https://github.com/BNNCP/BingoBingo" target="_blank"><img class="logo-work img-fluid" :src="Bingo"
-                        alt="BingoBingo"></a>
+                <a href="https://github.com/BNNCP/BingoBingo" target="_blank"><img class="logo-work img-fluid"
+                        :src="Bingo" alt="BingoBingo"></a>
                 <div class="hint">↑打開專案連結</div>
             </div>
             <div class="row bg-primary rounded-3 textbox"

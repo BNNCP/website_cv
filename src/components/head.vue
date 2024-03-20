@@ -6,20 +6,6 @@ import me from '../image/0318_163000223-0-7b186212-7b186212.jpg'
 
 const github = ref("https://github.com/BNNCP");
 const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
-const title = document.getElementById("titlebox");
-// const minx = 0;
-// const maxx = title.parentElement.clientWidth;
-// const animateTxt = (n) => {
-//     if (title.style.left == minx) {
-//         animateTxt(abs(n));
-//     }
-//     else if (title.style.left == maxx) {
-//         animateTxt(-abs(n));
-//     }
-//     title.style.left += n;
-//     setInterval(animateTxt(n), 1000)
-// }
-// animateTxt(10);
 </script>
 
 <template>
