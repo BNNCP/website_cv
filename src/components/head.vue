@@ -6,12 +6,26 @@ import me from '../image/0318_163000223-0-7b186212-7b186212.jpg'
 
 const github = ref("https://github.com/BNNCP");
 const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
+const title = document.getElementById("titlebox");
+// const minx = 0;
+// const maxx = title.parentElement.clientWidth;
+// const animateTxt = (n) => {
+//     if (title.style.left == minx) {
+//         animateTxt(abs(n));
+//     }
+//     else if (title.style.left == maxx) {
+//         animateTxt(-abs(n));
+//     }
+//     title.style.left += n;
+//     setInterval(animateTxt(n), 1000)
+// }
+// animateTxt(10);
 </script>
 
 <template>
     <section class="main">
         <div class="row">
-            <h1 style="font-weight: bolder; font-size: 50px; margin: 2rem; margin-left: 5rem; ">大中中的家</h1>
+            <h1 id="titlebox" style="font-weight: bolder; font-size: 50px; margin: 2rem; margin-left: 5rem; ">大中中的家</h1>
         </div>
         <div class="container-fluid">
 
@@ -36,15 +50,12 @@ const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
                     </div>
                     <div class="text-body">
                         <p class="lh-base">
-                            您好，我是張秉中，國高中就讀於菲律賓國際學校，而後回台灣就讀成功大學政治學系。畢業後出於個人興趣和規劃，開始學習全端工程師相關知識，期望能夠在這個領域發揮自己的才能和熱情。
+                            我是張秉中，國高中就讀於菲律賓國際學校，而後回台灣就讀成功大學。我的經驗著重在全端及系統開發，以及設計符合系統設計(Design Pattern)
+                            的程式框架。在版本控管上，我主要透過GitHub 來幫助團隊能在CI/CD 原則下更有效的開發。
                         </p>
                         <br>
                         <p class="lh-base">
-                            我是一位負責任、自我要求高的人，更是一個勇於學習新技術的人。在全端工程師訓練班上課期間，除了學習課堂上的內容之外，我利用課餘時間自學，例如，觀看哈佛大學的CS50課程、在HackerRank上進行演算法相關的練習，來彌補程式基礎，同時提高解決問題的能力。為了更深入了解網路應用開發，我主動學習了WebSocket、WebRTC等技術，實現專案的即時通訊功能，為專題開發提供更多可能性。我相信不斷學習新技術能夠讓我在全端工程師的角色中保持競爭力，並為團隊帶來更多價值。
-                        </p>
-                        <br>
-                        <p class="lh-base">
-                            雖然我非本科系畢業，但過去我在成功大學政治系的學習過程中，培養了扎實的研究、分析和溝通能力，我也擔任過社團活動總召與幹部，這些經驗使我能夠從多個角度看待問題並提供全面的解決方案，我相信這些能力也能應用在全端工程師的職位上，並將有助於我與團隊成員合作。
+                            我是一位負責任、自我要求高的人，更是一個勇於學習新技術的人。我利用休閒時間自學，例如，觀看哈佛大學的CS50課程、在HackerRank上進行演算法相關的練習，來彌補程式基礎，同時提高解決問題的能力。為了更深入了解網路應用開發，我主動學習了WebSocket、WebRTC等技術，實現專案的即時通訊功能，為專題開發提供更多可能性。我相信不斷學習新技術能夠讓我在全端工程師的角色中保持競爭力，並為團隊帶來更多價值。
                         </p>
                     </div>
                 </div>
@@ -59,6 +70,55 @@ const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
 * {
     margin: 0;
 }
+
+#titlebox {
+    position: relative;
+    -webkit-animation: moveX 5s linear 0s infinite alternate;
+    -moz-animation: moveX 5s linear 0s infinite alternate;
+    -o-animation: moveX 5s linear 0s infinite alternate;
+    animation: moveX 5s linear 0s infinite alternate
+}
+
+@-webkit-keyframes moveX {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 80%;
+    }
+}
+
+@-moz-keyframes moveX {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 80%;
+    }
+}
+
+@-o-keyframes moveX {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 80%;
+    }
+}
+
+@keyframes moveX {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 80%;
+    }
+}
+
 
 .container-fluid {
     background-color: #F8F8F8;
@@ -142,5 +202,9 @@ const lindIn = ref("https://www.linkedin.com/in/ben-chang-a58409177/");
 
 .linkTo>img {
     width: 35px;
+}
+
+.linkTo>a {
+    padding-left: 0.3rem;
 }
 </style>

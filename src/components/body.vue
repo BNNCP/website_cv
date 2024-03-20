@@ -8,6 +8,7 @@ import chickenLive from "../image/messageImage_1685025673792.jpg"
 import ramen from "../image/messageImage_1685034530405.jpg"
 import Bingo from '../image/346168769_926792961920849_6290047423726556787_n.png'
 import Amigo from "../image/Untitled.png"
+import ArtSolution from "../image/art-solutions.png"
 
 function randomColors() {
     setInterval(() => {
@@ -22,42 +23,31 @@ randomColors();
     <div class="container-fluid">
         <section class="title" v-motion-slide-visible-once-top>
             <font-awesome-icon class="fa-2x" :icon="['fas', 'school']" flip />
-            <h1>就學經歷</h1>
+            <h1>工作經歷</h1>
         </section>
         <div class="target " v-motion-slide-visible-once-left>
             <div class="row bg-primary rounded-3"
                 :class="{ 'bg-primary': color == 'bg-primary', 'bg-success': color == 'bg-success', 'bg-danger': color == 'bg-danger', 'bg-warning': color == 'bg-warning', 'bg-info': color == 'bg-info' }"
                 style="--bs-bg-opacity: .1;">
                 <div class="col m-2">
-                    <h1>Southville International School and Colleges</h1>
+                    <h1>安然科技公司</h1>
                 </div>
                 <div class="col m-2 text-break lh-lg text-wrap">
-                    <p>我國中高中在菲律賓就讀國際學校，期間除了培養英文能力以外，也結識不同國家的人才，累積與不同文化的人交流的經驗。國外就學的歷程，培養我開放活潑的個性，當進入一個新的陌生環境時我也能夠快速適應。且當時隻身國外，許多生活上的問題都必須自己解決。因此我很早就獨立學會照顧自己，這樣的特質使我面對生活上的挫折時比同年齡的人更成熟應對，不易被外界因素影響，也很願意接受挑戰。
+                    <p>在安然科技，作為軟體工程師，我的工作主要負責開發功能、維護及優化現行系統。內容包含：
+                    <ul>
+                        <li>Dynamics 365以及PowerApps，包含Canvas App、PCF（React）、Plugin（C#）、PowerAutomate、Web
+                            resource（JavaScript）等的功能開發及維護</li>
+                        <li>使用Git來幫助版本控管，幫助日常維護與除錯</li>
+                        <li>與顧問討論產品需求，並在系統架構下執行開發任務</li>
+                    </ul>
+                    除此之外，我以工廠設計模式（Factory Design Pattern）開發過具有SOLID性質的功能，並針對需求持續擴充。也透過Microst Azure
+                    Map開發過地圖系統，能夠在地圖上顯示資料數據，並可透過查詢來將畫面快速移動至指定位置。
                     </p>
                 </div>
             </div>
             <div class="row">
-                <img class="logo img-fluid" :src="highSchoolImg" alt="Southville International School and Colleges">
+                <img class="logo img-fluid" :src="ArtSolution" alt="Southville International School and Colleges">
             </div>
-        </div>
-        <div class="target " v-motion-slide-visible-once-left>
-            <div class="row bg-primary rounded-3"
-                :class="{ 'bg-primary': color == 'bg-primary', 'bg-success': color == 'bg-success', 'bg-danger': color == 'bg-danger', 'bg-warning': color == 'bg-warning', 'bg-info': color == 'bg-info' }"
-                style="--bs-bg-opacity: .1;">
-                <div class="col m-2">
-                    <h1>國立成功大學 政治學系</h1>
-                </div>
-                <div class="col m-2 text-break lh-lg text-wrap">
-                    <p>從菲律賓回台灣後就讀國立成功大學政治系，起初因國外教學方式與台灣填鴨式教育差異甚大而較不適應，但經過系上嚴謹且高強度的訓練後，我培養了撰寫學術性文章的技能，包括查找可靠資料來源，質化量化研究方法的使用，以及資料分析的邏輯。這四年的學習不僅僅學習了政治系四大領域國際關係、比較政治、政治理論、公共行政的範疇、我認為更重要的是培養了我思考與解決問題的能力。當面對同一件問題時，我能夠更深入探究背後的成因，並且使用科學方法進行驗證，我認為這樣的特質不論在哪個領域都很需要。
-                    </p>
-                    <!-- <p>除了課內學習 我還積極參與各種課外活動 我大學四年都參加成大服務團 到偏鄉國小舉辦營隊 陪伴小朋友並提供高品質的教案 我希望能夠在自己有能力的範圍內幫助別人 降低社會上的不平等
-                        我也曾經擔任過成大新鮮人之夜的總召 成大新鮮人之夜是一個專門舉辦給大一</p> -->
-                </div>
-            </div>
-            <div class="row">
-                <img class="logo img-fluid" :src="collegeImg" alt="National Cheng Kung University">
-            </div>
-
         </div>
         <section class="title" v-motion-slide-visible-once-top>
             <font-awesome-icon class="fa-2x" icon="fa-solid fa-star" flip />
@@ -65,8 +55,8 @@ randomColors();
         </section>
         <div class="target " id="chicken" v-motion-slide-visible-once-left>
             <div class="row imgbox">
-                <a href="https://github.com/momipochi/taiwan_amigo" target="_blank"><img class="logo-work img-fluid"
-                        :src="Amigo" alt="ChickenLive"></a>
+                <a href="https://6tentalk.com/" target="_blank"><img class="logo-work img-fluid" :src="Amigo"
+                        alt="6tentalk"></a>
                 <div class="hint">↑打開專案連結</div>
             </div>
             <div class="row bg-primary rounded-3 textbox"
@@ -140,6 +130,45 @@ randomColors();
                     </p>
                 </div>
             </div>
+        </div>
+        <section class="title" v-motion-slide-visible-once-top>
+            <font-awesome-icon class="fa-2x" :icon="['fas', 'school']" flip />
+            <h1>就學經歷</h1>
+        </section>
+        <div class="target " v-motion-slide-visible-once-left>
+            <div class="row bg-primary rounded-3"
+                :class="{ 'bg-primary': color == 'bg-primary', 'bg-success': color == 'bg-success', 'bg-danger': color == 'bg-danger', 'bg-warning': color == 'bg-warning', 'bg-info': color == 'bg-info' }"
+                style="--bs-bg-opacity: .1;">
+                <div class="col m-2">
+                    <h1>Southville International School and Colleges</h1>
+                </div>
+                <div class="col m-2 text-break lh-lg text-wrap">
+                    <p>我國中高中在菲律賓就讀國際學校，期間除了培養英文能力以外，也結識不同國家的人才，累積與不同文化的人交流的經驗。國外就學的歷程，培養我開放活潑的個性，當進入一個新的陌生環境時我也能夠快速適應。且當時隻身國外，許多生活上的問題都必須自己解決。因此我很早就獨立學會照顧自己，這樣的特質使我面對生活上的挫折時比同年齡的人更成熟應對，不易被外界因素影響，也很願意接受挑戰。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <img class="logo img-fluid" :src="highSchoolImg" alt="Southville International School and Colleges">
+            </div>
+        </div>
+        <div class="target " v-motion-slide-visible-once-left>
+            <div class="row bg-primary rounded-3"
+                :class="{ 'bg-primary': color == 'bg-primary', 'bg-success': color == 'bg-success', 'bg-danger': color == 'bg-danger', 'bg-warning': color == 'bg-warning', 'bg-info': color == 'bg-info' }"
+                style="--bs-bg-opacity: .1;">
+                <div class="col m-2">
+                    <h1>國立成功大學 政治學系</h1>
+                </div>
+                <div class="col m-2 text-break lh-lg text-wrap">
+                    <p>從菲律賓回台灣後就讀國立成功大學政治系，起初因國外教學方式與台灣填鴨式教育差異甚大而較不適應，但經過系上嚴謹且高強度的訓練後，我培養了撰寫學術性文章的技能，包括查找可靠資料來源，質化量化研究方法的使用，以及資料分析的邏輯。這四年的學習不僅僅學習了政治系四大領域國際關係、比較政治、政治理論、公共行政的範疇、我認為更重要的是培養了我思考與解決問題的能力。當面對同一件問題時，我能夠更深入探究背後的成因，並且使用科學方法進行驗證，我認為這樣的特質不論在哪個領域都很需要。
+                    </p>
+                    <!-- <p>除了課內學習 我還積極參與各種課外活動 我大學四年都參加成大服務團 到偏鄉國小舉辦營隊 陪伴小朋友並提供高品質的教案 我希望能夠在自己有能力的範圍內幫助別人 降低社會上的不平等
+                        我也曾經擔任過成大新鮮人之夜的總召 成大新鮮人之夜是一個專門舉辦給大一</p> -->
+                </div>
+            </div>
+            <div class="row">
+                <img class="logo img-fluid" :src="collegeImg" alt="National Cheng Kung University">
+            </div>
+
         </div>
     </div>
 </template>
